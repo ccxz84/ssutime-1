@@ -51,9 +51,11 @@ public class LoadActivity extends AppCompatActivity {
     private void Autolog(String string) {
         if(string.equals("-1")){
             startActivity(new Intent(this,LoginActivity.class));
+            finish();
         }
         else if(string.equals("1")){
             startActivity(new Intent(this,MainActivity.class));
+            finish();
         }
     }
 }
