@@ -63,6 +63,7 @@ public class LoginActivity extends AppCompatActivity {
         int val = Integer.parseInt(arg);
         if(val==1){
             startActivity(new Intent(this,MainActivity.class));
+            finish();
         }
         else if(val==-1){
             Toast.makeText(getApplicationContext(), "현재 로그인 상태입니다. 재접속 해주세요",    Toast.LENGTH_LONG).show();

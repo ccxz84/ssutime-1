@@ -3,6 +3,7 @@ package com.example.youngmin.ssutime.interfaces;
 import android.content.Context;
 
 import okhttp3.OkHttpClient;
+import retrofit2.GsonConverterFactory;
 import retrofit2.Retrofit;
 
 /**
@@ -26,6 +27,7 @@ public class Session {;
         retrofit = new Retrofit.Builder()
                 .baseUrl("http://13.124.129.71:8080/fitserver/")
                 .client(httpClient)
+                .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
     }
