@@ -24,6 +24,7 @@
         </activity>
         <activity android:name=".Activity.LoginActivity" />
         <activity android:name=".Activity.MainActivity" />
+
         <activity android:name=".Activity.post.WritePostActivity" />
         <activity android:name=".Activity.post.PostViewActivity"></activity>
     </application>
